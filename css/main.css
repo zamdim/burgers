@@ -1,0 +1,657 @@
+body {
+    margin: 0;
+    background: #f6f7f7;
+}
+
+@font-face {
+    font-family: "Capture it";
+    src: url("../fonts/Captureit.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/RobotoRegular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url("../fonts/RobotoBold.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Black";
+    src: url("../fonts/RobotoBlack.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Thin";
+    src: url("../fonts/RobotoThin.ttf");
+}
+
+@font-face {
+    font-family: "Lifehack Basic";
+    src: url("../fonts/Lifehack-Basic.otf");
+}
+
+@font-face {
+    font-family: "Roboto Light";
+    src: url("../fonts/RobotoLight.ttf");
+}
+
+#main {
+    background: url("../images/main-bg.png") center;
+    height: 908px;
+}
+
+#header {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 26px;
+}
+
+#logo span {
+    font-size: 30px;
+    font-family: "Capture it", sans-serif;
+    color: rgb(254, 254, 254);
+    line-height: 1.8;
+}
+
+#menu ul {
+    display: flex;
+    justify-content: space-between;
+    width: 580px;
+    margin: 0;
+}
+
+#menu ul li {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 3.375;
+}
+
+#menu ul li:first-child {
+    list-style: none;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#menu ul li.active a {
+    font-family: "Roboto Bold", sans-serif;
+}
+
+.btn-white {
+    font-size: 13px;
+    font-family: "Roboto Bold", sans-serif;
+    color: rgb(254, 254, 254);
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 207px;
+    height: 48px;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-white:hover {
+    color: #f6a501;
+    border-color: #f6a501;
+}
+
+#title {
+    width: 1170px;
+    margin: 68px auto 0 auto;
+}
+
+#title-burgers {
+    width: 600px;
+    height: 130px;
+    background: url("../images/stamp.png");
+    background-size: 100% 100%;
+    font-size: 55px;
+    font-family: "Capture it", sans-serif;
+    color: rgb(246, 165, 1);
+    text-shadow: 0 0 91px rgba(2, 7, 8, 0.004);
+    text-align: center;
+    line-height: 130px;
+}
+
+.btn-yellow {
+    font-size: 15px;
+    font-family: "Roboto Bold", sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 10px;
+    background-image: -moz-linear-gradient(180deg, rgb(255, 199, 59) 0%, rgb(235, 161, 0) 100%);
+    background-image: -webkit-linear-gradient(180deg, rgb(255, 199, 59) 0%, rgb(235, 161, 0) 100%);
+    background-image: -ms-linear-gradient(180deg, rgb(255, 199, 59) 0%, rgb(235, 161, 0) 100%);
+    width: 209px;
+    height: 50px;
+    margin-top: 58px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+.btn-yellow:hover {
+    box-shadow: 0 0 13px 1px rgba(204, 142, 6, 1);
+    cursor: pointer;
+}
+
+#title-text {
+    font-size: 40px;
+    font-family: "Lifehack Basic", sans-serif;
+    color: rgb(246, 166, 1);
+    text-shadow: 0 0 14px rgba(2, 7, 8, 0.4);
+    -moz-transform: matrix(0.99320644518279, -0.11636561883718, 0.11636561883718, 0.99320644518279, 0, 0);
+    -webkit-transform: matrix(0.99320644518279, -0.11636561883718, 0.11636561883718, 0.99320644518279, 0, 0);
+    -ms-transform: matrix(0.99320644518279, -0.11636561883718, 0.11636561883718, 0.99320644518279, 0, 0);
+    padding-left: 45px;
+    margin-top: 33px;
+}
+
+#title-text span {
+    color: white;
+}
+
+#features {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+#features .features {
+    width: 390px;
+    text-align: center;
+    margin: 25px 0;
+}
+
+#features .features .features-image {
+    margin-bottom: 30px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#features .features .features-title {
+    font-size: 20px;
+    font-family: "Roboto Bold", sans-serif;
+    color: rgb(51, 23, 3);
+    margin-bottom: 30px;
+}
+
+#features .features .features-text {
+    font-size: 18px;
+    font-family: "Roboto Light", sans-serif;
+    color: rgb(51, 23, 3);
+    line-height: 1.222;
+}
+
+#description {
+    height: 999px;
+    background: url("../images/bg2.png") center;
+}
+
+.block-title {
+    font-size: 35px;
+    font-family: "Roboto Bold", sans-serif;
+    color: rgb(246, 165, 1);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+#description .block-title {
+    padding-top: 200px;
+}
+
+#description-container {
+    display: flex;
+    width: 1170px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+#description-text {
+    max-width: 420px;
+}
+
+#description-text #description-text-title {
+    font-size: 30px;
+    font-family: "Lifehack Basic", sans-serif;
+    color: rgb(254, 254, 254);
+    line-height: 1.167;
+    margin: 115px 0 45px 0;
+}
+
+#description-text .description-text-words {
+    font-size: 16px;
+    font-family: "Roboto Light", sans-serif;
+    color: rgb(254, 254, 254);
+    line-height: 1.563;
+    text-indent: 20px;
+    margin: 15px 0;
+}
+
+#stock {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+#stock .block-title {
+    margin: 70px auto 45px auto;
+    color: #331703;
+}
+
+#stock .category-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+#stock .category {
+    font-size: 20px;
+    font-family: "Roboto Light", sans-serif;
+    color: rgb(51, 23, 3);
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin: 0 10px;
+    padding: 10px 15px;
+}
+
+#stock .category.active {
+    font-family: "Roboto Bold", sans-serif;
+    border: 1px solid rgb(51, 23, 3);
+    border-radius: 10px;
+}
+
+#stock .category:hover {
+    border: 1px solid rgb(51, 23, 3);
+    cursor: pointer;
+}
+
+.products {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.products .product {
+    display: flex;
+    justify-content: space-between;
+}
+
+.products .product .product-image {
+    height: 450px;
+    width: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products .product .product-image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.products .product .product-content {
+    width: 500px;
+}
+
+.products .product .product-content .product-content-title {
+    font-size: 25px;
+    font-family: "Roboto Bold", sans-serif;
+    color: rgb(51, 23, 3);
+    text-transform: uppercase;
+    margin: 100px 0 35px 0;
+}
+
+.products .product .product-content .product-content-description {
+    font-size: 16px;
+    font-family: "Roboto Light", sans-serif;
+    color: rgb(51, 23, 3);
+    line-height: 25px;
+    margin-bottom: 50px;
+}
+
+.products .product .product-content .product-contents-properties {
+    display: flex;
+}
+
+.products .product .product-content .product-contents-property:first-child {
+    margin-right: 80px;
+}
+
+.products .product .product-content .product-contents-property span {
+    font-size: 20px;
+    font-family: "Roboto Light", sans-serif;
+    color: rgb(51, 23, 3);
+}
+
+.products .product .product-content .product-contents-property img {
+    margin-right: 10px;
+}
+
+.products-nav {
+    display: flex;
+    margin-bottom: 95px;
+    margin-top: 10px;
+}
+
+.products-nav .product-nav {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    opacity: 0.3;
+}
+
+.products-nav .product-nav.slick-current {
+    opacity: 1;
+}
+
+.products-nav .product-nav:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+.products-nav .product-nav img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.products-nav .product-nav:focus {
+    outline: none;
+}
+
+.slick-slide img {
+    display: inline;
+}
+
+#stock .slick-prev::before {
+    content: url("../images/prev.png");
+}
+
+#stock .slick-next::before {
+    content: url("../images/next.png");
+}
+
+#stock .slick-next {
+    left: 600px;
+}
+
+#fries-container, #sauces-container, #drinks-container {
+    display: none;
+}
+
+#info {
+    background: url("../images/bgend.png") top center;
+}
+
+#info .block-title {
+    padding-top: 130px;
+    margin: 0 auto 60px auto;
+}
+
+#reviews {
+    display: flex;
+    justify-content: space-around;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+#reviews .review {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    outline: none;
+    margin: 0 50px;
+}
+
+#reviews .review .review-image {
+    border-radius: 50%;
+    width: 112px;
+    height: 112px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+#reviews .review .review-text {
+    width: 325px;
+}
+
+#reviews .review .review-text .review-text-title {
+    font-size: 20px;
+    font-family: "Roboto Bold", sans-serif;
+    color: rgb(254, 254, 254);
+    text-transform: uppercase;
+}
+
+#reviews .review .review-text .review-text-description {
+    font-size: 16px;
+    font-family: "Roboto Light", sans-serif;
+    color: rgb(254, 254, 254);
+    line-height: 25px;
+}
+
+#addresses {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+#addresses .block-title {
+    margin: 150px 0 60px 0;
+    padding: 0;
+}
+
+#addresses-container {
+    display: flex;
+    justify-content: center;
+}
+
+#addresses-container .addresses-container {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 0 15px;
+    padding: 15px;
+}
+
+#addresses-container .addresses-container .address {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 470px;
+}
+
+#addresses-container .addresses-container .address .address-text {
+    margin-top: 25px;
+    text-align: left;
+    padding: 0 90px;
+}
+
+#addresses-container .addresses-container .address .address-text span {
+    font-size: 20px;
+    font-family: "Roboto Bold", sans-serif;
+    color: rgb(247, 246, 246);
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
+#addresses-container .addresses-container .address .address-text img {
+    vertical-align: middle;
+}
+
+#addresses-container .addresses-container .address .address-button {
+    margin: 40px auto 25px auto;
+    text-align: center;
+}
+
+#instagram {
+    margin: 85px auto 0 auto;
+    padding-bottom: 139px;
+    width: 1170px;
+    text-align: center;
+}
+
+#instagram a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#instagram-text {
+    font-size: 20px;
+    font-family: "Roboto Black", sans-serif;
+    color: #eca303;
+    text-transform: uppercase;
+    margin-top: 35px;
+}
+
+#footer {
+    background-color: rgb(18, 8, 1);
+    height: 60px;
+    width: 100%;
+    font-size: 10px;
+    font-family: "Roboto Thin", sans-serif;
+    color: rgb(188, 188, 188);
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 60px;
+}
+
+#reviews .slick-prev::before {
+    content: url("../images/prev-gray.png");
+}
+
+#reviews .slick-next::before {
+    content: url("../images/next-gray.png");
+}
+
+#reservation-container {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 99999;
+    justify-content: center;
+    align-items: center;
+}
+
+#reservation {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(63, 63, 63);
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 0px 0px 40.67px 8.33px rgba(2, 7, 8, 1);
+    width: 584px;
+    padding: 45px 35px 70px 35px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#reservation-cancel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#reservation h2.block-title {
+    font-size: 25px;
+}
+
+#reserve {
+    margin: 35px 0 45px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#reserve .reserve-input label {
+    font-size: 11px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+    line-height: 22px;
+}
+
+#reserve .reserve-input {
+    margin-top: 15px;
+}
+
+#reserve .reserve-input input {
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 10px;
+    width: 248px;
+    height: 38px;
+    background: transparent;
+    color: white;
+    outline: none;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+#reserve-button {
+    text-align: center;
+    margin-top: 0;
+}
+
+#reserve-button button {
+    margin-top: 0;
+}
+
+#reservation-sent {
+    display: none;
+}
+
+#reservation-sent h2.block-title {
+    margin-top: 95px;
+}
+
+#reservation-sent-text {
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.333;
+    text-align: center;
+    margin: 35px 0 110px 0;
+}
+
+#reserve-error {
+    color: red;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    margin: 10px;
+    display: none;
+}
+
+#show-menu a.btn-yellow {
+    text-decoration: none;
+    display: block;
+    line-height: 50px;
+}
+
+#burger {
+    display: none;
+    color: white;
+    font-size: 32px;
+    line-height: 30px;
+}
